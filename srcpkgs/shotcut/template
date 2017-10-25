@@ -2,7 +2,6 @@
 pkgname=shotcut
 version=17.10
 revision=1
-only_for_archs="i686 x86_64"
 build_style=qmake
 hostmakedepends="qt5-qmake qt5-tools pkg-config"
 makedepends="
