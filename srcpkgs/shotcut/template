@@ -2,6 +2,7 @@
 pkgname=shotcut
 version=17.10
 revision=1
+only_for_archs="i686 x86_64"
 build_style=qmake
 hostmakedepends="qt5-qmake qt5-tools pkg-config"
 makedepends="
@@ -19,6 +20,3 @@ license="GPL-3"
 homepage="https://www.shotcut.org"
 distfiles="https://github.com/mltframework/shotcut/archive/v${version}.tar.gz"
 checksum=2cf824d8ee0b4cf96a0f4312c9f34e927e2920d9c80908ae255dcebb15778d8d
-if [ -n "$CROSS_BUILD" ]; then
-       hostmakedepends+=" qt5-tools-devel"
-fi
