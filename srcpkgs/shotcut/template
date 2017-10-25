@@ -20,3 +20,7 @@ license="GPL-3"
 homepage="https://www.shotcut.org"
 distfiles="https://github.com/mltframework/shotcut/archive/v${version}.tar.gz"
 checksum=2cf824d8ee0b4cf96a0f4312c9f34e927e2920d9c80908ae255dcebb15778d8d
+if [ -n "${CROSS_BUILD}" ]; then
+	hostmakedepends+=" qt5-devel qt5-3d-devel qt5-quickcontrols qt5-webkit-devel
+	 qt5-multimedia-devel qt5-websockets-devel qt5-declarative-devel qt5-x11extras-devel"
+fi
